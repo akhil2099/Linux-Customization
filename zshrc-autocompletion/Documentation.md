@@ -9,6 +9,9 @@ This documentation will guide you through the steps of installing and setting up
 - [Configuration](#configuration)
 - [Customization](#customization)
 - [Troubleshooting](#troubleshooting)
+- [Conclusion](#conclusion)
+
+## <a id="prerequisites"></a>Prerequisites 🧰
 
 ## Prerequisites 🧰
 Before we start, you need:
@@ -16,7 +19,7 @@ Before we start, you need:
 - **Oh My Zsh** installed (optional, but highly recommended!). 💻
 - Basic knowledge of Zsh configuration files (`~/.zshrc`). 😎
 
-## Installation 🛠️
+## <a id="installation"></a>Installation 🛠️
 
 ### 1. Install `zsh-autosuggestions` Plugin
 
@@ -52,7 +55,7 @@ Before we start, you need:
    source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
    ```
 
-## Configuration ⚙️
+## <a id="configuration"></a>Configuration ⚙️
 
 1. After installing the plugin, ensure that the following line is added to your **`~/.zshrc`** file:
 
@@ -70,7 +73,7 @@ Before we start, you need:
 
 Once the plugin is enabled, suggestions will appear automatically as you type. You'll be amazed at how it predicts your commands! 🤯
 
-## Customization 🎨
+## <a id="customization"></a>Customization 🎨
 
 You can customize **`zsh-autosuggestions`** to fit your unique style! 😎
 
@@ -100,7 +103,7 @@ Make it easier to accept suggestions by binding the **Right Arrow** key:
 bindkey "^[[C" autosuggest-accept ➡️
 ```
 
-## Troubleshooting 🛑
+## <a id="troubleshooting"></a>Troubleshooting 🛑
 
 If **`zsh-autosuggestions`** isn’t working, don’t panic! Here are some troubleshooting steps to get you back on track. 🛠️
 
@@ -155,6 +158,6 @@ source ~/.zshrc
 
 ---
 
-## Conclusion 🎯
+## <a id="conclusion"></a>Conclusion 🎯
 
 You’ve now got **`zsh-autosuggestions`** set up and ready to make your terminal experience faster and more fun! 🎉 If you run into any issues or need more help, don’t hesitate to consult the official [Zsh Autosuggestions GitHub](https://github.com/zsh-users/zsh-autosuggestions) repository. 🌟
