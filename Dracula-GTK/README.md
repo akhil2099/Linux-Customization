@@ -1,4 +1,3 @@
-Here's a fun version of the Dracula GTK Theme documentation with emojis added for some flair! 😎
 
 ---
 
