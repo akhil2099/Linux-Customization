@@ -1,6 +1,6 @@
-# Terminal Customization Guide: Let’s Make Your Terminal Cool! 😎
+# Linux & Terminal Customization Guide: Let’s Make Your Terminal Cool! 😎
 
-Welcome to the **Terminal Customization Guide**—where we turn your boring command line into a tech-savvy, productivity-boosting, cool-cat station. Whether you’re a shell wizard or a terminal newbie, we've got the right tricks to make you feel like the Neo of your command line world (minus the whole Matrix thing). 
+Welcome to the **Linux & Terminal Customization Guide**—where we turn your boring command line into a tech-savvy, productivity-boosting, cool-cat station. Whether you’re a shell wizard or a terminal newbie, we've got the right tricks to make you feel like the Neo of your command line world (minus the whole Matrix thing). 
 
 ## What is This Guide? 🤔
 It’s not just a guide; it's an adventure in terminal wizardry! You’ll be customizing your terminal environment to be as functional as a Swiss Army knife and as stylish as a 90’s hacker movie. 
