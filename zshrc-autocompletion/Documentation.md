@@ -13,7 +13,6 @@ This documentation will guide you through the steps of installing and setting up
 
 ## <a id="prerequisites"></a>Prerequisites 🧰
 
-## Prerequisites 🧰
 Before we start, you need:
 - A terminal running **Zsh**. 🖥️
 - **Oh My Zsh** installed (optional, but highly recommended!). 💻
