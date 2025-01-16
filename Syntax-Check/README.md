@@ -1,3 +1,4 @@
+
 ---
 
 # Syntax Check & Linter Party 🎉
