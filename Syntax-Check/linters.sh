@@ -19,7 +19,7 @@ if command_exists yamllint; then
     echo "yamllint is already installed."
 else
     echo "Installing Python Linter (yamllint)..."
-    pip install yamllint
+    apt install yamllint -y
 fi
 
 # Install ESLint (for JS/JSX, TS/TSX)
@@ -46,7 +46,7 @@ if command_exists tidy; then
     echo "Tidy is already installed."
 else
     echo "Installing Tidy (HTML Linter)..."
-    apt-get install tidy  # For Debian-based systems
+    apt-get install tidy -y # For Debian-based systems
     # brew install tidy-html5  # For macOS
 fi
 
@@ -74,7 +74,7 @@ if command_exists javac; then
     echo "javac is already installed."
 else
     echo "Installing Java Linter (javac)..."
-    apt-get install default-jdk  # Install Java Development Kit
+    apt-get install default-jdk -y # Install Java Development Kit
 fi
 
 # Install Hadolint (Dockerfile Linter)
@@ -97,7 +97,7 @@ if command_exists groovy; then
     echo "Groovy is already installed."
 else
     echo "Installing Groovy (for Jenkinsfile)..."
-    apt-get install groovy  # For Linux
+    apt-get install groovy -y # For Linux
     # brew install groovy        # For macOS
 fi
 
@@ -126,7 +126,7 @@ if command_exists gcc; then
     echo "GCC is already installed."
 else
     echo "Installing GCC (for C)..."
-    apt-get install gcc  # For Debian-based systems
+    apt-get install gcc -y # For Debian-based systems
     # brew install gcc          # For macOS
 fi
 
@@ -136,7 +136,7 @@ if command_exists g++; then
     echo "G++ is already installed."
 else
     echo "Installing G++ (for C++)..."
-    apt-get install g++  # For Debian-based systems
+    apt-get install g++ -y  # For Debian-based systems
     # brew install gcc          # For macOS
 fi
 
@@ -146,7 +146,7 @@ if command_exists go; then
     echo "Go is already installed."
 else
     echo "Installing Go Linter..."
-    apt-get install golang-go  # For Debian-based systems
+    apt-get install golang-go -y  # For Debian-based systems
     # brew install go             # For macOS
 fi
 
@@ -156,7 +156,7 @@ if command_exists ruby; then
     echo "Ruby is already installed."
 else
     echo "Installing Ruby..."
-    apt-get install ruby  # For Debian-based systems
+    apt-get install ruby -y  # For Debian-based systems
     # brew install ruby         # For macOS
 fi
 
@@ -166,7 +166,7 @@ if command_exists php; then
     echo "PHP is already installed."
 else
     echo "Installing PHP..."
-    apt-get install php  # For Debian-based systems
+    apt-get install php -y  # For Debian-based systems
     # brew install php          # For macOS
 fi
 
@@ -176,7 +176,7 @@ if command_exists perl; then
     echo "Perl is already installed."
 else
     echo "Installing Perl..."
-    apt-get install perl  # For Debian-based systems
+    apt-get install perl -y # For Debian-based systems
     # brew install perl         # For macOS
 fi
 

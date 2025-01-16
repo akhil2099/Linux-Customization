@@ -26,8 +26,8 @@ We’ve packed this script with **cool linter tools**. But first, let’s make s
 ### Step 1: Clone This Script and Get Ready to Be Amazed
 
 ```bash
-git clone https://github.com/akhil2099/Terminal-Customization/Syntax-Check.git
-cd Shell-Check
+git clone https://github.com/akhil2099/Terminal-Customization.git
+cd Terminal-Customization/Shell-Check
 ```
 
 ### Step 2: Run the Linters Setup
