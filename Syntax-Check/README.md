@@ -26,7 +26,7 @@ We’ve packed this script with **cool linter tools**. But first, let’s make s
 ### Step 1: Clone This Script and Get Ready to Be Amazed
 
 ```bash
-git clone https://github.com/Linux-Customization/Shell-Check.git
+git clone https://github.com/Terminal-Customization/Shell-Check.git
 cd Shell-Check
 ```
 
