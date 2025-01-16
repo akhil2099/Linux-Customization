@@ -26,7 +26,7 @@ We’ve packed this script with **cool linter tools**. But first, let’s make s
 ### Step 1: Clone This Script and Get Ready to Be Amazed
 
 ```bash
-git clone https://github.com/your-awesome-repo/Shell-Check.git
+git clone https://github.com/Linux-Customization/Shell-Check.git
 cd Shell-Check
 ```
 
@@ -42,7 +42,91 @@ sudo ./linters.sh
 
 Now your system will be more lined up than your last family reunion photo. 📸
 
-### Step 3: Use `syntax_check()`
+
+### Step 3: Customize your .zshrc or .bashrc file
+
+copy pasta:
+
+```bash
+function syntax_check() {
+    local file="$1"
+    batcat --paging=never "$file"  # Display the file with syntax highlighting
+
+    case "$file" in
+	*.sh)
+            shellcheck "$file"  # Syntax check for bash scripts
+            ;;
+        *.py) 
+            python -m py_compile "$file" 
+            ;;
+        *.js | *.jsx) 
+            eslint "$file" 
+            ;;
+        *.ts | *.tsx) 
+            eslint "$file" || tsc --noEmit "$file" 
+            ;;
+        *.html) 
+            tidy -q -e "$file" 
+            ;;
+        *.yaml | *.yml) 
+            yamllint "$file" 
+            ;;
+        *.json) 
+            jq . "$file" > /dev/null || echo "Invalid JSON syntax" 
+            ;;
+        *.css | *.scss | *.sass) 
+            stylelint "$file" 
+            ;;
+        *.java) 
+            javac "$file" 
+            ;;
+        Dockerfile) 
+            hadolint "$file" 
+            ;;
+        Jenkinsfile) 
+            groovy "$file" 
+            ;;
+        *.sh) 
+            shellcheck "$file" 
+            ;;
+        *.md) 
+            markdownlint "$file" 
+            ;;
+        *.c) 
+            gcc -fsyntax-only "$file" 
+            ;;
+        *.cpp) 
+            g++ -fsyntax-only "$file" 
+            ;;
+        *.go) 
+            go fmt "$file" > /dev/null || echo "Syntax error in Go file" 
+            ;;
+        *.rb) 
+            ruby -c "$file" 
+            ;;
+        *.php) 
+            php -l "$file" 
+            ;;
+        *.pl) 
+            perl -c "$file" 
+            ;;
+        *.rs) 
+            rustc --check "$file" 
+            ;;
+        *.nxt) 
+            echo "Custom syntax check for .nxt files not implemented" 
+            ;;
+        *) 
+            echo "No syntax check available for this file type" 
+            ;;
+    esac
+}
+alias check=syntax_check
+
+```
+
+
+### Step 4: Use `syntax_check()`
 
 Run the magic function:
 
