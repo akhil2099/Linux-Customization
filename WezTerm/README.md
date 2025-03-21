@@ -136,7 +136,7 @@ sudo nano /usr/local/man/man1/wezterm-custom.1
 
 2. Add the formatted manual page content .
 
-```sh
+```man
 .TH WEZTERM-CUSTOM 1 "March 20, 2025" "Wezterm Custom Config" "User Commands"
 .SH NAME
 wezterm-custom \- Custom Wezterm keybindings for Linux
