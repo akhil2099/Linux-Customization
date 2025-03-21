@@ -125,23 +125,119 @@ return {
 }
 ```
 
-## Troubleshooting
-### Font Issues
-- Ensure you have installed a **Nerd Font** like **JetBrainsMono Nerd Font**.
-- Set the font manually in your terminal settings if necessary.
+## Creating a Custom Manual Page
+To create a manual page for custom WezTerm keybindings:
 
-### Flatpak Issues
-- If WezTerm does not start, run:
-  ```sh
-  flatpak run --command=sh org.wezfurlong.wezterm
-  ```
-  Then manually check logs for issues.
+1. Create a file `/usr/local/man/man1/wezterm-custom.1` with the following content:
 
-### Configuration Not Applying
-- Restart WezTerm after editing `~/.wezterm.lua`:
-  ```sh
-  wezterm cli reload
-  ```
+```sh
+sudo nano /usr/local/man/man1/wezterm-custom.1
+```
+
+2. Add the formatted manual page content .
+
+```sh
+.TH WEZTERM-CUSTOM 1 "March 20, 2025" "Wezterm Custom Config" "User Commands"
+.SH NAME
+wezterm-custom \- Custom Wezterm keybindings for Linux
+
+.SH DESCRIPTION
+\fBwezterm-custom\fR defines custom keybindings for Wezterm on Fedora with Zsh. Default keybindings are disabled, using \fBCTRL\fR, \fBSHIFT\fR, \fBALT\fR, and \fBLEADER\fR (\fBCtrl+B\fR, 2000ms timeout).
+
+.SH KEYBINDINGS
+.SS Tab Management
+.TS
+tab(|);
+l|l.
+Ctrl+Shift+L|Next tab
+Ctrl+Shift+H|Previous tab
+Ctrl+T|New tab
+Ctrl+W|Close tab
+Ctrl+PageUp|Previous tab
+Ctrl+PageDown|Next tab
+.TE
+
+.SS Pane Management
+.TS
+tab(|);
+l|l.
+Ctrl+J|Pane down
+Ctrl+K|Pane up
+Ctrl+H|Pane left
+Ctrl+L|Pane right
+Ctrl+Shift+Left|Pane left
+Ctrl+Shift+Right|Pane right
+Ctrl+Shift+Up|Pane up
+Ctrl+Shift+Down|Pane down
+Ctrl+F|Split vertical
+Ctrl+D|Split horizontal
+Ctrl+X|Close pane
+.TE
+
+.SS Copy/Paste and Selection
+.TS
+tab(|);
+l|l.
+Ctrl+Shift+C|Copy to clipboard
+Ctrl+V|Paste from clipboard
+Ctrl+Shift+U|Character selector
+Ctrl+Enter|Copy mode
+Ctrl+B, Enter|Copy mode (leader)
+Ctrl+B, P|Paste primary selection
+.TE
+
+.SS Font Size
+.TS
+tab(|);
+l|l.
+Ctrl++|Increase size
+Ctrl+-|Decrease size
+Ctrl+0|Reset size
+.TE
+
+.SS Window Management
+.TS
+tab(|);
+l|l.
+Ctrl+Shift+N|New window
+.TE
+
+.SS Terminal Control
+.TS
+tab(|);
+l|l.
+Ctrl+Shift+R|Reload config
+Ctrl+Alt+K|Clear scrollback
+Ctrl+B, R|Resize pane mode
+Ctrl+B, Ctrl+B|Send Ctrl+B
+.TE
+
+.SH FILES
+.I ~/.wezterm.lua
+Configuration file with these keybindings.
+
+.SH DIAGNOSTICS
+Check desktop environment conflicts or debug logs (\fBCtrl+Shift+L\fR if defaults enabled). Verify version with \fBwezterm --version\fR.
+
+.SH SEE ALSO
+.BR wezterm (1),
+.BR zsh (1)
+
+.SH AUTHOR
+Akhil
+```
+
+3. Update the man database:
+
+```sh
+sudo mandb
+```
+
+4. View your new manual page:
+
+```sh
+man wezterm-custom
+```
 
 ## Additional Resources
 - **WezTerm Official Site:** [https://wezfurlong.org/wezterm/](https://wezfurlong.org/wezterm/)
