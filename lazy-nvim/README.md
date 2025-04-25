@@ -32,6 +32,30 @@ A modern, feature-rich Neovim configuration focused on productivity and aestheti
 - 💻 Customizable dashboard with [Alpha](https://github.com/goolord/alpha-nvim)
 - 🔧 Simple yet powerful keybindings
 - 📈 Git integration with [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+- 🖥️ Integrated terminal with [Toggleterm](https://github.com/akinsho/toggleterm.nvim)
+
+
+## 📸 Screenshots
+
+<details>
+<summary>Click to expand screenshots</summary>
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Code Editing
+![Code Editing](screenshots/code-editing.png)
+
+### File Explorer
+![File Explorer](screenshots/file-explorer.png)
+
+### Terminal Integration
+![Terminal](screenshots/terminal.png)
+
+### Fuzzy Finding
+![Telescope](screenshots/telescope.png)
+
+</details>
 
 ## 📋 Requirements
 
