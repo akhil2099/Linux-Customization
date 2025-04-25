@@ -45,4 +45,5 @@ Let’s do this. Because let’s face it, a better terminal = a better life. Or 
 
 Feel free to contact us if your terminal starts sending you cryptic messages about world domination. No promises we can help with that part. 😅
 
-[![image](https://github.com/user-attachments/assets/eb7d4ad0-7ee7-4c24-a5a0-8e0fa6664cbc)](https://github.com/akhil2099/Linux-Customization/)
+![image](https://github.com/user-attachments/assets/113f1150-5d4d-4b6c-8b85-bc494d927374)
+
